@@ -28,5 +28,10 @@ def blackjack_score(hand)
       end
     end
   end
+
+  if score > 21
+    raise ArgumentError
+  end
+
   return score
 end
